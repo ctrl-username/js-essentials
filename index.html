@@ -42,8 +42,12 @@
         const button = document.querySelector("button")
         const greeting = document.querySelector("#greeting")
         function greet() {
-            const name = prompt("What is your name");
-            greeting.textContent = `Hello ${name}, nice to see you`;
+            let name = prompt("What is your name");
+            // greeting.textContent = `Hello ${name}, nice to see you`;
+            while (name.length <= 8) {
+                name = prompt("text is too short enter longer text");
+            }
+            greeting.textContent = `Hello ${name} is valid `;
         }
 
         button.addEventListener('click', greet)
