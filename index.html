@@ -8,6 +8,8 @@
 </head>
 
 <body>
+    <button>Press Me</button>
+    <div id="greeting"></div>
     <script>
         let firstname = "Houoin"
         let lastname = "Kyouma"
@@ -36,6 +38,15 @@
         console.log(pride)
         console.log(mission)
         console.log(_, $)
+
+        const button = document.querySelector("button")
+        const greeting = document.querySelector("#greeting")
+        function greet() {
+            const name = prompt("What is your name");
+            greeting.textContent = `Hello ${name}, nice to see you`;
+        }
+
+        button.addEventListener('click', greet)
     </script>
 </body>
 
