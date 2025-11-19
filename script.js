@@ -1,5 +1,5 @@
 function favoriteFood(params) {
   return params + " is My favorite food";
 }
-
-console.log(favoriteFood("rice"));
+const food = favoriteFood("Potato and beans");
+console.log(food);
