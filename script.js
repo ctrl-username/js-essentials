@@ -7,11 +7,17 @@ console.log(food);
 function Add7(num) {
   return console.log(num + 7);
 }
-rint = 12;
-Add7(rint);
+magicno = 12;
+Add7(magicno);
 
 function multiply(num, num1) {
   return console.log(num * num1);
 }
 
 multiply(4, 3);
+
+function capitalise(text) {
+  return console.log(text.toUpperCase());
+}
+
+capitalise("victor");
