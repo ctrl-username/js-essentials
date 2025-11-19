@@ -5,7 +5,13 @@ const food = favoriteFood("Potato and beans");
 console.log(food);
 
 function Add7(num) {
-  return num + 7;
+  return console.log(num + 7);
 }
 rint = 12;
-console.log(Add7(rint));
+Add7(rint);
+
+function multiply(num, num1) {
+  return console.log(num * num1);
+}
+
+multiply(4, 3);
