@@ -51,7 +51,16 @@
         }
 
         button.addEventListener('click', greet)
+        function selfCheck(question, yes, no) {
+            if (confirm(question)) {
+                yes()
+            } else {
+                no()
+            }
+        }
+        selfCheck("Do you hate your self ?", () => alert("Why would you do that"), () => alert("great keep practicing to improve yourself"))
     </script>
+
 </body>
 
 </html>
