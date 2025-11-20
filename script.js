@@ -17,7 +17,7 @@ function multiply(num, num1) {
 multiply(4, 3);
 
 function capitalise(text) {
-  return console.log(text.toUpperCase());
+  console.log(text[0].toUpperCase() + text.slice(1).toLowerCase());
 }
 
-capitalise("victor");
+capitalise("ENChanted");
