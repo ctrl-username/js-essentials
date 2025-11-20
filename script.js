@@ -21,3 +21,9 @@ function capitalise(text) {
 }
 
 capitalise("ENChanted");
+
+function lastLetter(string) {
+  console.log(string.slice(-1));
+}
+
+lastLetter("Knives");
