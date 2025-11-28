@@ -23,3 +23,12 @@ function sumOfEvens(multipleofevens) {
 console.log("multiple of evens", multipleofevens);
 sumOfEvens(multipleofevens);
 console.log("sum of evens", sum);
+
+let filtered = multipleofevens.reduce((total, item) => {
+  return total * item;
+  console.log(total, item);
+});
+
+console.log(filtered);
+console.log(6 + 12 + 18 + 24 + 30);
+console.log(6 * 12 * 18 * 24 * 30);
