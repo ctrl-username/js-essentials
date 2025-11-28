@@ -1,34 +1,17 @@
-arrays = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let even;
-function filterEvenNumbers(array) {
-  even = array.filter((x) => x % 2 === 0);
-  console.log(even);
-}
-let multipleofevens;
-function multipleOfEvens(evenNumbers) {
-  return (multipleofevens = evenNumbers.map((num) => num * 3));
-}
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-filterEvenNumbers(arrays);
-multipleOfEvens(even);
-console.log(even);
-
-let sum = 0;
-function sumOfEvens(multipleofevens) {
-  for (let i = 0; i < multipleofevens.length; i++) {
-    sum = sum + multipleofevens[i];
-  }
+function sumOfTripleEvens(even) {
+  //filter and store even numbers to the evens variable
+  evens = even.filter((x) => x % 2 === 0);
+  //multiplies each even number by 3 and stores them in a new array called triple of evens
+  tripleofevens = evens.map((x) => x * 3);
+  sumofevens = tripleofevens.reduce(
+    (number, anothernumber) => number + anothernumber
+  );
+  console.log(evens, tripleofevens, sumofevens);
 }
 
-console.log("multiple of evens", multipleofevens);
-sumOfEvens(multipleofevens);
-console.log("sum of evens", sum);
-
-let filtered = multipleofevens.reduce((total, item) => {
-  return total * item;
-  console.log(total, item);
-});
-
-console.log(filtered);
-console.log(6 + 12 + 18 + 24 + 30);
-console.log(6 * 12 * 18 * 24 * 30);
+sumOfTripleEvens(array);
+// array.map
+// array.filter
+// array.reduce
