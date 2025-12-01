@@ -12,6 +12,20 @@ function camelize(str) {
   return camelCase;
 }
 
-console.log(camelize("background-color"));
-console.log(camelize("list-style-image"));
-console.log(camelize("-webkit-transition"));
+// console.log(camelize("background-color"));
+// console.log(camelize("list-style-image"));
+// console.log(camelize("-webkit-transition"));
+
+function camelizes(str) {
+  let words = str.split("-");
+  let camelCase = words
+    .map((word, index) =>
+      index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+    )
+    .join("");
+  return camelCase;
+}
+
+console.log(camelizes("background-color"));
+console.log(camelizes("list-style-image"));
+console.log(camelizes("-webkit-transition"));
