@@ -6,7 +6,9 @@ let arr = [5, 8, 1, 3];
 function filterRangeInPlace(array, a, b) {
   filtered = array.filter((x) => x >= a && x <= b);
 
+  // empty array
   array.length = 0;
+  // fill array with filtered content
   array.push(...filtered);
 }
 filterRangeInPlace(arr, 1, 4);
