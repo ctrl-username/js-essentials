@@ -7,3 +7,24 @@ const content1 = document.createElement("p");
 content1.textContent = "Hey i'm red";
 container.appendChild(content1);
 content1.style.color = "red";
+const content2 = document.createElement("h3");
+content2.textContent = "I'm a blue H3!";
+content2.style.color = "blue";
+container.appendChild(content2);
+const blackDiv = document.createElement("div");
+blackDiv.setAttribute("id", "black-div");
+blackDiv.setAttribute(
+  "style",
+  "border: solid black ; width: ; height:500px; background-color:pink; text-align:center;",
+);
+container.appendChild(blackDiv);
+
+const subContainer = document.querySelector("#black-div");
+const childH1 = document.createElement("h1");
+childH1.textContent = "I'm in a Div";
+const childP = document.createElement("p");
+childP.textContent = "Mee TOO!";
+blackDiv.append(childH1);
+blackDiv.append(childP);
+//code
+//document object observation
