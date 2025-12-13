@@ -39,3 +39,9 @@ blackDiv.addEventListener("click", () => alert("Are you lost ?"));
 hackBtn.addEventListener("click", (e) =>
   console.log((e.target.style.background = "red")),
 );
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => alert(button.id || button.class));
+});
