@@ -26,5 +26,12 @@ const childP = document.createElement("p");
 childP.textContent = "Mee TOO!";
 blackDiv.append(childH1);
 blackDiv.append(childP);
-//code
+
+const hackBtn = document.createElement("button");
+hackBtn.textContent = "Time Travel";
+hackBtn.setAttribute("id", "converge");
+blackDiv.append(hackBtn);
+
+hackBtn.onclick = () => alert("Wordline Convergence, Fate Defeated");
+//code event listeneres are fun
 //document object observation
