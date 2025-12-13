@@ -36,4 +36,6 @@ hackBtn.onclick = () => alert("Wordline Convergence, Fate Defeated");
 //code event listeneres are fun
 //document object observation
 blackDiv.addEventListener("click", () => alert("Are you lost ?"));
-hackBtn.addEventListener("click", (e) => console.log(e.target));
+hackBtn.addEventListener("click", (e) =>
+  console.log((e.target.style.background = "red")),
+);
