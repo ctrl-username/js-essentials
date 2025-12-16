@@ -34,6 +34,7 @@ function addItem(event) {
   //event listener for delete button to delete
   deleteButton.addEventListener("click", () => shopItem.remove());
   console.log(shopItemText);
+  userInput.focus();
 }
 
 addButton.addEventListener("click", addItem);
