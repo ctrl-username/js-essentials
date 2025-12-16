@@ -23,7 +23,15 @@ function addItem(event) {
 
   // clear userinput value
   userInput.value = "";
-  console.log(inputValue);
+
+  // set text content for item span and delete button element
+
+  shopItemText.textContent = inputValue;
+  deleteButton.textContent = "Delete";
+  shopItem.append(shopItemText);
+  shopItem.append(deleteButton);
+  shopListContainer.append(shopItem);
+  console.log(shopItemText);
 }
 
 addButton.addEventListener("click", addItem);
