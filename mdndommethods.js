@@ -6,6 +6,13 @@ const sect = document.querySelector("section");
 const para = document.createElement("p");
 para.textContent = "Belive you can and you're halfway there";
 sect.appendChild(para);
+
+const text = document.createTextNode(
+  " -The beautiful thing about learning is that nobody can take it away from you.",
+);
+const linkPara = document.querySelector("p");
+
+linkPara.appendChild(text);
 //
 //
 //why
