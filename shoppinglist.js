@@ -11,6 +11,7 @@ const addButton = document.querySelector("button");
 
 // add button
 function addItem(params) {
+  preventDefault();
   // create li,span and button element
   const shopItem = document.createElement("li");
   const shopItemText = document.createElement("span");
