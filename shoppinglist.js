@@ -31,6 +31,8 @@ function addItem(event) {
   shopItem.append(shopItemText);
   shopItem.append(deleteButton);
   shopListContainer.append(shopItem);
+  //event listener for delete button to delete
+  deleteButton.addEventListener("click", () => shopItem.remove());
   console.log(shopItemText);
 }
 
