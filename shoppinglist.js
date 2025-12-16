@@ -10,14 +10,20 @@ const userInput = document.querySelector("input");
 const addButton = document.querySelector("button");
 
 // add button
-function addItem(params) {
-  preventDefault();
+function addItem(event) {
+  event.preventDefault();
+
   // create li,span and button element
   const shopItem = document.createElement("li");
   const shopItemText = document.createElement("span");
   const deleteButton = document.createElement("button");
+
   // store input form value
   let inputValue = userInput.value;
+
   // clear userinput value
   userInput.value = "";
+  console.log(inputValue);
 }
+
+addButton.addEventListener("click", addItem);
