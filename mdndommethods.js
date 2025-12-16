@@ -13,7 +13,8 @@ const text = document.createTextNode(
 const linkPara = document.querySelector("p");
 
 linkPara.appendChild(text);
-sect.removeChild(linkPara);
+// sect.removeChild(linkPara);
+linkPara.remove();
 //
 //
 //why
