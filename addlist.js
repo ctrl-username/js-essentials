@@ -38,3 +38,4 @@ const addTodo = () => {
 };
 
 addTodoBtn.addEventListener("click", addTodo);
+//javascript is fun
