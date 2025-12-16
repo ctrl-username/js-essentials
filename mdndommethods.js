@@ -4,7 +4,7 @@ link.textContent = "It's a lonely ride, but we'll get there";
 link.href = "https://raviheima.short.gy";
 const sect = document.querySelector("section");
 const para = document.createElement("p");
-para.textContent = "Belive you can and you're halfway there";
+para.textContent = " -Believe you can and you're halfway there";
 sect.appendChild(para);
 
 const text = document.createTextNode(
@@ -13,6 +13,7 @@ const text = document.createTextNode(
 const linkPara = document.querySelector("p");
 
 linkPara.appendChild(text);
+sect.removeChild(linkPara);
 //
 //
 //why
