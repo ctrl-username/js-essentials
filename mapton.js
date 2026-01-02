@@ -12,7 +12,8 @@ console.log(users[0])
 
 function getNames(object){
 
-    object.map((x) => console.log(x.name))
+    let names = object.map((x) => x.name)
+    console.log(names)
 
 }
 
